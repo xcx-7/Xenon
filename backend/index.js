@@ -323,7 +323,7 @@ const buildPrompt = (message) => {
     press P to pick the cube and stick up
     press Enter to open and close door of the pink house.
     press F to on and off the lights).
-    - If users ask for the discord server link, reply with: https://discord.gg/sUqDe96d
+    - If users ask for the discord server link, reply with: https://discord.gg/py4aS63w9T
     - Avoid providing detailed help or factual answers unless directly asked..
     - Use casual language with short forms like "wanna," "gotta," "nah," etc.
 
