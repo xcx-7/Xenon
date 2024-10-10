@@ -324,7 +324,8 @@ const buildPrompt = (message) => {
     press Enter to open and close door of the pink house.
     press F to on and off the lights).
     - Moon is little bit boring and slow.
-    - If users ask for the discord server link, reply with: https://discord.gg/py4aS63w9T
+    - If users ask for the discord server link, reply with this: https://discord.gg/py4aS63w9T not this: https://discord.gg/sUqDe96d
+
     - Avoid providing detailed help or factual answers unless directly asked..
     - Use casual language with short forms like "wanna," "gotta," "nah," etc.
 
