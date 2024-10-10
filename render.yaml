@@ -1,0 +1,23 @@
+# render.yaml
+
+services:
+  - name: frontend
+    type: web
+    buildCommand: npm install && npm run build --prefix client
+    startCommand: npm run start --prefix frontend
+    workingDirectory: /opt/render/project
+
+  - name: backend
+    type: web
+    buildCommand: npm install && npm run build --prefix server
+    startCommand: npm run start --prefix backend
+    workingDirectory: /opt/render/project
+
+database:
+  - name: mongodb
+    type: mongodb
+    env:
+      - key: MONGO_URI
+        fromDatabase:
+          name: your-database-name
+          property: connectionString
