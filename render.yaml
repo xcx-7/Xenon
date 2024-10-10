@@ -36,7 +36,7 @@ services:
   - name: backend
     type: web
     buildCommand: npm install --prefix backend
-    startCommand: npm start --prefix backend
+    startCommand: npm run start --prefix backend
     envVars:
       - key: MONGO_URI
         fromDatabase:
