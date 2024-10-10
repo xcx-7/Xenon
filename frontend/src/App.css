@@ -116,9 +116,9 @@ strong {
 
 /* General body styling */
 body {
-background-image: -webkit-linear-gradient(315deg, #000000 0%, #060513 15%, #000000 30%, #05091b 50%, #000000 65%, #050b1f 80%, #000000 100%);
-background-image: -moz-linear-gradient(315deg, #000000 0%, #060513 15%, #000000 30%, #05091b 50%, #000000 65%, #050b1f 80%, #000000 100%);
-background-image: linear-gradient(315deg, #000000 0%, #060513 15%, #000000 30%, #05091b 50%, #000000 65%, #050b1f 80%, #000000 100%);
+  background-image: -webkit-linear-gradient(315deg, #000000 0%, #0a081f 15%, #000000 30%, #070d27 50%, #000000 65%, #070f29 80%, #000000 100%);
+background-image: -moz-linear-gradient(315deg, #000000 0%, #09071b 15%, #000000 30%, #080e29 50%, #000000 65%, #050c22 80%, #000000 100%);
+background-image: linear-gradient(315deg, #000000 0%, #08071b 15%, #000000 30%, #070d25 50%, #000000 65%, #070f2b 80%, #000000 100%);
 /* Darker gradient */
   color: #e0e0e0;
   margin: 0;
