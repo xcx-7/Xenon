@@ -160,7 +160,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./db');
-const Conversation = require('./models/ConversationSchema'); // Import the model
+const Conversation = require('./models/conversationSchema'); // Import the model
 const path = require('path')
 
 dotenv.config();
