@@ -1,5 +1,5 @@
 /* App.css */
-.chat-container {
+/* .chat-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,4 +83,309 @@
 strong {
   display: block;
   margin-bottom: 5px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General body styling */
+body {
+  background-color: #000000; /* Pure black background */
+  background-image: linear-gradient(315deg, #000000 0%, #060513 15%, #000000 30%, #05091b 50%, #000000 65%, #050b1f 80%, #000000 100%); /* Darker gradient */
+  color: #e0e0e0;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+
+
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.chat-box {
+  width: 500px;
+  max-width: 90%;
+  height: 800px;
+  background-color: rgba(15, 15, 15, 0.1); /* Slightly transparent dark background */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color:rgba(87, 87, 87, 0.1); /* Darker background for header */
+  border-bottom: 1px solid #000000;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  border-bottom: 1px solid #333;
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: rgba(30, 30, 30, 0.4);
+}
+
+.chat-input input {
+  flex-grow: 1;
+  border: 1px solid rgba(30, 30, 30, 0.4);
+  background-color: rgba(30, 30, 30, 0.4);
+  color: #e0e0e0;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #0066cc; /* Slightly lighter blue */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #004c99;
+}
+
+/* Style for user and bot messages */
+.user-message {
+  text-align: right; /* Align user message to the right */
+  margin-bottom: 10px;
+}
+
+.user-message p {
+  display: inline-block;
+  background-color: #3366ff; /* Sky blue */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.bot-message {
+  text-align: left; /* Align bot message to the left */
+  margin-bottom: 10px;
+}
+
+.bot-message p {
+  display: inline-block;
+  background-color: #424242;
+  color: #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+/* Loading Screen */
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.loading-screen img {
+  width: 300px; /* Adjust the size of the GIF */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* text design */
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600);
+
+body {
+    font-family: 'Varela', sans-serif;
+    overflow: hidden;
+}
+
+.wrap {
+    background-size: contain;
+    height: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glitch {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    color: rgb(12, 13, 51);
+    font-size: 40px;
+    position: relative;
+    margin: 0 auto;
+    text-shadow:
+        0px -5px 10px rgba(255, 255, 255, 1),
+        0px 0px 5px rgba(255, 255, 255, 0),
+        0px 0px 10px rgba(255, 255, 255, 0),
+        0px 0px 15px rgba(255, 255, 255, 0),
+        0px 0px 20px rgba(255, 255, 255, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse, shift 4s ease-in-out infinite alternate, blur 8s ease-in-out infinite alternate;
+    transform: skewX(0deg);
+}
+
+@keyframes blur {
+    0%, 40%, 50%, 60%, 90%, 95%, 100% {
+        text-shadow:
+            0px -5px 10px rgba(255, 255, 255, 1),
+            0px 0px 5px rgba(255, 255, 255, 0),
+            0px 0px 10px rgba(255, 255, 255, 0),
+            2px 1px 15px rgba(100, 240, 255, 0),
+            0px 0px 20px rgba(255, 255, 255, 0);
+    }
+    45%, 75% {
+        text-shadow:
+            0px -5px 10px rgba(255, 255, 255, 1),
+            0px 0px 5px rgba(255, 255, 255, 1),
+            0px 0px 10px rgba(255, 255, 255, 1),
+            2px 1px 15px rgba(100, 240, 255, 1),
+            0px 0px 20px rgba(255, 255, 255, 1);
+    }
+    97.5% {
+        text-shadow:
+            0px -5px 10px rgba(255, 255, 255, 0),
+            0px 0px 5px rgba(255, 255, 255, 0),
+            0px 0px 10px rgba(255, 255, 255, 0),
+            2px 1px 4px rgba(255, 100, 100, 1),
+            0px 0px 20px rgba(255, 255, 255, 0);
+    }
+}
+
+.glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 3px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: transparent;
+    background: transparent;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse, shift 4s ease-in-out infinite alternate;
+    transform: skewX(0deg);
+    z-index: -2;
+    opacity: .7;
+}
+
+.glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 1px;
+    text-shadow: -3px 0 cyan;
+    top: 0;
+    color: transparent;
+    background: transparent;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse, shift 4s ease-in-out infinite alternate;
+    transform: skewX(0deg);
+    z-index: -1;
+    opacity: .8;
+}
+
+@keyframes noise-anim-2 {
+    0% { clip: rect(20px, 9999px, 80px, 0); }
+    20% { clip: rect(10px, 9999px, 60px, 0); }
+    40% { clip: rect(30px, 9999px, 90px, 0); }
+    60% { clip: rect(40px, 9999px, 100px, 0); }
+    80% { clip: rect(50px, 9999px, 120px, 0); }
+    100% { clip: rect(60px, 9999px, 140px, 0); }
+}
+
+@keyframes shift {
+    0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+        transform: skewX(0deg);
+    }
+    41% {
+        transform: skewX(10deg);
+    }
+    42% {
+        transform: skewX(-10deg);
+    }
+    59% {
+        transform: skewX(40deg) skewY(10deg);
+    }
+    60% {
+        transform: skewX(-40deg) skewY(-10deg);
+    }
+    63% {
+        transform: skewX(10deg) skewY(-5deg);
+    }
+    70% {
+        transform: skewX(-50deg) skewY(-20deg);
+    }
+    71% {
+        transform: skewX(10deg) skewY(-10deg);
+    }
+}
+
