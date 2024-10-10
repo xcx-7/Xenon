@@ -1,23 +1,16 @@
-# render.yaml
-
 services:
   - name: frontend
     type: web
-    buildCommand: npm install && npm run build --prefix client
-    startCommand: npm run start --prefix frontend
+    buildCommand: npm install && npm run build --prefix frontend
+    startCommand: npm start --prefix frontend
     workingDirectory: /opt/render/project
 
   - name: backend
     type: web
-    buildCommand: npm install && npm run build --prefix server
-    startCommand: npm run start --prefix backend
-    workingDirectory: /opt/render/project
-
-database:
-  - name: mongodb
-    type: mongodb
-    env:
+    buildCommand: npm install --prefix backend
+    startCommand: npm run backend --prefix backend  # Matches nodemon script in package.json
+    envVars:
       - key: MONGO_URI
         fromDatabase:
-          name: your-database-name
+          name: mongodb
           property: connectionString
