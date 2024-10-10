@@ -1,16 +1,46 @@
+# services:
+#   - name: frontend
+#     type: web
+#     buildCommand: npm install && npm run build --prefix frontend
+#     startCommand: npm start --prefix frontend
+#     workingDirectory: /opt/render/project
+
+#   - name: backend
+#     type: web
+#     buildCommand: npm install --prefix backend
+#     startCommand: npm start --prefix backend # Use the start script instead of backend
+#     envVars:
+#       - key: MONGO_URI
+#         fromDatabase:
+#           name: mongodb
+#           property: connectionString
+
+
+
+
+
+
+
+
+
+
 services:
   - name: frontend
     type: web
     buildCommand: npm install && npm run build --prefix frontend
-    startCommand: npm start --prefix frontend
-    workingDirectory: /opt/render/project
+    startCommand: serve -s build -l $PORT
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://your-backend-url.onrender.com
 
   - name: backend
     type: web
     buildCommand: npm install --prefix backend
-    startCommand: npm start --prefix backend # Use the start script instead of backend
+    startCommand: npm start --prefix backend
     envVars:
       - key: MONGO_URI
         fromDatabase:
           name: mongodb
           property: connectionString
+      - key: API_KEY
+        sync: true
