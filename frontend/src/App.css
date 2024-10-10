@@ -116,8 +116,10 @@ strong {
 
 /* General body styling */
 body {
-  background-color: #000000; /* Pure black background */
-  background-image: linear-gradient(315deg, #000000 0%, #060513 15%, #000000 30%, #05091b 50%, #000000 65%, #050b1f 80%, #000000 100%); /* Darker gradient */
+background-image: -webkit-linear-gradient(315deg, #000000 0%, #060513 15%, #000000 30%, #05091b 50%, #000000 65%, #050b1f 80%, #000000 100%);
+background-image: -moz-linear-gradient(315deg, #000000 0%, #060513 15%, #000000 30%, #05091b 50%, #000000 65%, #050b1f 80%, #000000 100%);
+background-image: linear-gradient(315deg, #000000 0%, #060513 15%, #000000 30%, #05091b 50%, #000000 65%, #050b1f 80%, #000000 100%);
+/* Darker gradient */
   color: #e0e0e0;
   margin: 0;
   font-family: Arial, sans-serif;
