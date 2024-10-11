@@ -303,6 +303,10 @@ connectDB();
 
 app.use(cors());
 app.use(express.json());
+app.use(cors({
+  origin: '*', // Replace '*' with the specific frontend URL if you want stricter security
+  methods: ['GET', 'POST'],
+}));
 
 const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 
