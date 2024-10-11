@@ -170,7 +170,7 @@ function App() {
     if (!message) return;
 
     try {
-      const response = await axios.post('https://yourappname.onrender.com/chat', { message });
+      const response = await axios.post('https://xenon-tkqt.onrender.com/chat', { message });
 
       setResponses([...responses, { user: message, bot: response.data.response }]);
       setMessage('');
