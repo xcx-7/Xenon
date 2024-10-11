@@ -115,6 +115,8 @@ strong {
 
 
 /* General body styling */
+
+
 body {
   background-image: -webkit-linear-gradient(315deg, #000000 0%, #0a081f 15%, #000000 30%, #070d27 50%, #000000 65%, #070f29 80%, #000000 100%);
 background-image: -moz-linear-gradient(315deg, #000000 0%, #09071b 15%, #000000 30%, #080e29 50%, #000000 65%, #050c22 80%, #000000 100%);
@@ -282,16 +284,12 @@ body {
 .glitch {
     font-family: 'Exo 2', sans-serif;
     font-weight: 900;
-    color: rgb(12, 13, 51);
+    color: rgb(204, 0, 0);
     font-size: 40px;
+    text-decoration: none; 
     position: relative;
     margin: 0 auto;
-    text-shadow:
-        0px -5px 10px rgba(255, 255, 255, 1),
-        0px 0px 5px rgba(255, 255, 255, 0),
-        0px 0px 10px rgba(255, 255, 255, 0),
-        0px 0px 15px rgba(255, 255, 255, 0),
-        0px 0px 20px rgba(255, 255, 255, 0);
+    /* text-shadow: 0px -2px 5px rgba(255, 0, 0, 0.1);  */
     animation: noise-anim-2 3s infinite linear alternate-reverse, shift 4s ease-in-out infinite alternate, blur 8s ease-in-out infinite alternate;
     transform: skewX(0deg);
 }
@@ -299,27 +297,19 @@ body {
 @keyframes blur {
     0%, 40%, 50%, 60%, 90%, 95%, 100% {
         text-shadow:
-            0px -5px 10px rgba(255, 255, 255, 1),
-            0px 0px 5px rgba(255, 255, 255, 0),
-            0px 0px 10px rgba(255, 255, 255, 0),
+            0px -2px 5px rgba(255, 0, 0, 0.1),
             2px 1px 15px rgba(100, 240, 255, 0),
-            0px 0px 20px rgba(255, 255, 255, 0);
+            0px 0px 20px rgba(0, 255, 255, 0);
     }
     45%, 75% {
         text-shadow:
-            0px -5px 10px rgba(255, 255, 255, 1),
-            0px 0px 5px rgba(255, 255, 255, 1),
-            0px 0px 10px rgba(255, 255, 255, 1),
-            2px 1px 15px rgba(100, 240, 255, 1),
-            0px 0px 20px rgba(255, 255, 255, 1);
+            0px -2px 5px rgba(255, 0, 0, 0.1),
+            2px 1px 15px rgba(100, 240, 255, 1);
     }
     97.5% {
         text-shadow:
-            0px -5px 10px rgba(255, 255, 255, 0),
-            0px 0px 5px rgba(255, 255, 255, 0),
-            0px 0px 10px rgba(255, 255, 255, 0),
-            2px 1px 4px rgba(255, 100, 100, 1),
-            0px 0px 20px rgba(255, 255, 255, 0);
+            0px -2px 5px rgba(255, 0, 0, 0.1),
+            2px 1px 4px rgba(255, 100, 100, 1);
     }
 }
 
@@ -390,4 +380,3 @@ body {
         transform: skewX(10deg) skewY(-10deg);
     }
 }
-
