@@ -284,7 +284,7 @@ body {
 .glitch {
     font-family: 'Exo 2', sans-serif;
     font-weight: 900;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 40px;
     text-decoration: none; 
     position: relative;
