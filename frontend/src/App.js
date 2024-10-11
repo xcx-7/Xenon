@@ -170,7 +170,8 @@ function App() {
     if (!message) return;
 
     try {
-      const response = await axios.post('http://localhost:3001/chat', { message });
+      const response = await axios.post('https://yourappname.onrender.com/chat', { message });
+
       setResponses([...responses, { user: message, bot: response.data.response }]);
       setMessage('');
     } catch (err) {
