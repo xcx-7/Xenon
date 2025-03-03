@@ -170,7 +170,8 @@ function App() {
     if (!message) return;
 
     try {
-      const response = await axios.post('https://xenon-99ldnewit-xcx-7s-projects.vercel.app/chat', { message });
+      // const response = await axios.post('https://xenon-99ldnewit-xcx-7s-projects.vercel.app/chat', { message });
+      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/chat`, { message });
 
       setResponses([...responses, { user: message, bot: response.data.response }]);
       setMessage('');
