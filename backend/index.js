@@ -21,7 +21,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 app.use(cors({
-  origin: 'https://xenonn.vercel.app/', 
+  origin: 'https://xenonn.vercel.app', 
   methods: ['GET', 'POST'],
 }));
 
